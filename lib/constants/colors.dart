@@ -8,4 +8,4 @@ const Color black = Color(0xFF000000);
 
 const Color gray = Color(0xFF808080);
 
-const Color backgroundColor = Color(0xFF0000);
+const Color backgroundColor = Color(0xFFCC99FF);
