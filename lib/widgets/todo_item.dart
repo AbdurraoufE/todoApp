@@ -20,7 +20,7 @@ class TodoItem extends StatelessWidget{
         contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
-          Icons.check_box, 
+          todo.isDone? Icons.check_box : Icons.check_box_outline_blank, 
           color: blue,
           ),
         title: Text(
@@ -28,7 +28,7 @@ class TodoItem extends StatelessWidget{
           style: TextStyle(
             fontSize: 16, 
             color: black, 
-            decoration: TextDecoration.lineThrough,
+            decoration: todo.isDone? TextDecoration.lineThrough : null,
           ),
         ),
         trailing: Container(
