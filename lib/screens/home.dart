@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ),
-                      for ( ToDo todoo in listtodo )
+                      for ( ToDo todoo in foundToDo )
                         TodoItem(
                           todo: todoo,
                           onToDoChanged: handleToDoChange,
@@ -165,6 +165,7 @@ Widget searchBox(){
                 borderRadius: BorderRadius.circular(20)
               ),
               child: TextField(
+                onChanged: (value) => searchToDo(value) ,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(0),
                   prefixIcon: Icon(Icons.search, 
