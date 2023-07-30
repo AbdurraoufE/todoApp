@@ -44,7 +44,11 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       for ( ToDo todoo in listtodo )
-                        TodoItem(todo: todoo,),
+                        TodoItem(
+                          todo: todoo,
+                          onToDoChanged: handleToDoChange,
+                          onDeleteItem: () {},
+                        ),
                     ],
                   ),
                 )
@@ -107,7 +111,9 @@ class _HomeState extends State<Home> {
 
 // the functionality of the app
 void handleToDoChange (ToDo todo){
-  todo.isDone = !todo.isDone; // If true, set to false. If false, set to true
+  setState(() {
+    todo.isDone = !todo.isDone; // If true, set to false. If false, set to true  
+  });
 }
 
 Widget searchBox(){
