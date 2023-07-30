@@ -12,6 +12,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final listtodo = ToDo.todoList();
+  List<ToDo> foundToDo = [];
+  final todoController = TextEditingController();
+  
+  @override
+  void initState(){
+    foundToDo = listtodo;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context){
@@ -47,7 +55,7 @@ class _HomeState extends State<Home> {
                         TodoItem(
                           todo: todoo,
                           onToDoChanged: handleToDoChange,
-                          onDeleteItem: () {},
+                          onDeleteItem: deleteToDoItem,
                         ),
                     ],
                   ),
@@ -80,6 +88,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular(10),
                   ),
                   child: TextField(
+                    controller: todoController,
                     decoration: InputDecoration(
                       hintText: "Add a new topic",
                       border: InputBorder.none,
@@ -94,7 +103,9 @@ class _HomeState extends State<Home> {
                 ),
                 child: ElevatedButton(
                   child: Text("+",style: TextStyle(fontSize: 40,),),
-                  onPressed: () {},
+                  onPressed: () {
+                    addToDoItem(todoController.text);
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: blue,
                     minimumSize: Size(60, 60),
@@ -113,6 +124,36 @@ class _HomeState extends State<Home> {
 void handleToDoChange (ToDo todo){
   setState(() {
     todo.isDone = !todo.isDone; // If true, set to false. If false, set to true  
+  });
+}
+
+// delete an item functionality
+void deleteToDoItem(String id){
+  setState(() {
+    listtodo.removeWhere((item) => item.id == id);
+  });
+}
+
+//add a new item functionality
+void addToDoItem(String toDo){
+  //set a unique ID (generated from the time we delete)
+  setState(() {
+    listtodo.add(ToDo(id: DateTime.now().millisecondsSinceEpoch.toString(), todoText: toDo,));
+  });
+  todoController.clear();
+}
+
+// search a todo functionality
+void searchToDo(String enterdToDo){
+  List<ToDo> results = [];
+  // if someone puts in nothing in the search bar, display the available todo items
+  if(enterdToDo.isEmpty){
+    results = listtodo;
+  } else {
+    results = listtodo.where((item) => item.todoText!.toLowerCase().contains(enterdToDo.toLowerCase())).toList();
+  }
+  setState(() {
+    foundToDo = results;
   });
 }
 
