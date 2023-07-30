@@ -7,8 +7,11 @@ class TodoItem extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Container(
+      margin: EdgeInsets.only(bottom: 20),
       child: ListTile(
-        onTap: () {},
+        onTap: () {
+          print("Clicked a ToDo Item!");
+        },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -39,7 +42,9 @@ class TodoItem extends StatelessWidget{
             color: Colors.white,
             iconSize: 18,
             icon: Icon(Icons.delete),
-            onPressed: () {},
+            onPressed: () {
+              print("Deleted a ToDo Item!");
+            },
           ),
         ),
       ),
