@@ -51,7 +51,8 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ),
-                      for ( ToDo todoo in foundToDo )
+                      // the .reversed reverses the list (new todos added on top)
+                      for ( ToDo todoo in foundToDo.reversed)
                         TodoItem(
                           todo: todoo,
                           onToDoChanged: handleToDoChange,
