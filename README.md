@@ -34,12 +34,12 @@
 2. Make sure you have Flutter installed and set up on your local machine.
 3. Open the project in your preferred IDE.
 4. Run the following command in the terminal to install dependencies:
-```bash
+```shell
 flutter pub get
 ```
 5. Connect your emulator or physical device.
 6. Run the app using the following command:
-```bash
+```shell
 flutter run
 ```
 
