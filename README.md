@@ -69,7 +69,7 @@ flutter run
 
 ## Future-Plans
 
-- Add a sign-up/login page
-    - Sign-out page
+- Create a sign-up/log-in page
+    - Option for a Sign-out page
 - Option to create folders (QOL update) 
 - Publish the app on Google Play Store
