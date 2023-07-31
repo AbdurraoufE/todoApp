@@ -34,7 +34,7 @@
 2. Make sure you have Flutter installed and set up on your local machine.
 3. Open the project in your preferred IDE.
 4. Run the following command in the terminal to install dependencies:
-```
+```dart
 flutter pub get
 ```
 
