@@ -68,3 +68,8 @@ flutter run
 ![video gif](https://github.com/AbdurraoufE/todoApp/assets/80374873/b4a8adcb-e678-482a-9a84-06f7778ecfcc)
 
 ## Future-Plans
+
+- Add a sign-up/login page
+    - Sign-out page
+- Option to create folders (QOL update) 
+- Publish the app on Google Play Store
