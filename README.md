@@ -65,6 +65,6 @@ flutter run
 
 ![Screenshot_1690788133](https://github.com/AbdurraoufE/todoApp/assets/80374873/08a8cfdd-c411-4a3c-a64f-f50e0ad50611)
 
-![VideoGif](https://github.com/AbdurraoufE/todoApp/assets/80374873/9e95c2d0-30cd-4018-95b9-9035dc4d2999)
+![video gif](https://github.com/AbdurraoufE/todoApp/assets/80374873/b4a8adcb-e678-482a-9a84-06f7778ecfcc)
 
 ## Future-Plans
