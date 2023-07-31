@@ -61,9 +61,9 @@ flutter run
 
 ## Screenshots
 
-<img src="https://github.com/AbdurraoufE/todoApp/assets/80374873/08a8cfdd-c411-4a3c-a64f-f50e0ad50611" alt="Image" width="250" height="500">
+<img src="https://github.com/AbdurraoufE/todoApp/assets/80374873/08a8cfdd-c411-4a3c-a64f-f50e0ad50611" alt="Image" width="300" height="500">
 
-![Screenshot_1690788133](https://github.com/AbdurraoufE/todoApp/assets/80374873/08a8cfdd-c411-4a3c-a64f-f50e0ad50611)
+<!-- ![Screenshot_1690788133](https://github.com/AbdurraoufE/todoApp/assets/80374873/08a8cfdd-c411-4a3c-a64f-f50e0ad50611) -->
 
 ![video gif](https://github.com/AbdurraoufE/todoApp/assets/80374873/b4a8adcb-e678-482a-9a84-06f7778ecfcc)
 
