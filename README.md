@@ -25,6 +25,7 @@
 - [How to run the application](#How-To-Run-App)
 - [Features on the app](#Features)
 - [Screenshots](#screenshots)
+- [What is next?](#Future-Plans)
 
 ## Application-Background
 - Built with Flutter and Dart
@@ -57,3 +58,10 @@ flutter run
 ✅ **Check Off Todo Items:** Mark tasks as completed once you have completed a specific task
 
 🗑️ **Delete Todo Items:** Remove completed or unnecessary todos from your list to stay clutter-free
+
+## Screenshots
+
+[Example](https://gyazo.com/0093b35a08b329991412371e8b901e87)
+
+
+## Future-Plans
